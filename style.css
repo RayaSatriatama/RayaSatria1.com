@@ -78,3 +78,28 @@ label {
     color: #ddd; /* Lighten the link color on hover */
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#profileImageContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    z-index: -1; /* Ensure it doesn't overlap the navbar */
+}
+
+#profileImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.fixed-top-left {
+    top: 20px; /* Adjust based on navbar height */
+    left: 20px; /* Adjust as needed */
+    transform: translate(0, 0);
+}
