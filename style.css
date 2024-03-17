@@ -1,0 +1,80 @@
+/* Basic reset for padding and margin to avoid inconsistencies across browsers */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+
+/* Ensures images fit well in their containers without breaking the layout */
+.img-thumbnail, .card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Card styling for a more distinct appearance */
+.card {
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+/* Style modifications for the navigation buttons */
+.btn-primary, .btn-secondary {
+    margin-right: 10px;
+}
+
+/* Specific styling for form elements for better visibility */
+.form-control, .form-check-input {
+    margin-bottom: 15px;
+}
+
+/* Enhancements for the form actions to stand out */
+.form-actions {
+    margin-top: 20px;
+}
+
+/* Custom styling for labels to increase readability */
+label {
+    margin-bottom: 5px;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ddd; /* Lighten the link color on hover */
+}
+
