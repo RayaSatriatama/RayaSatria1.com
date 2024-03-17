@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">My Portfolio</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,12 +29,12 @@
                     </ul>
                 </div>
             </div>
-        </nav>   
-        <div id="profileImageContainer" class="text-center">
-            <img src="asset/foto_profil.jpg" alt="Profile Image" class="rounded-circle" id="profileImage">
-        </div> 
+        </nav>  
+    <div class="container mt-5 text-center">
         <h1 class="mb-4">Profil Saya</h1>
-        <div class="row">
+        <img src="asset/foto_profil.jpg" alt="Profile Picture" class="img-fluid mb-3 rounded-circle" style="width: 200px; height: 200px;">
+        
+        <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
@@ -51,29 +51,37 @@
                 <div class="card mt-3">
                     <div class="card-body">
                         <h2 class="card-title">Keterampilan</h2>
-                        <ul>
-                            <li>PLC</li>
-                            <li>Arduino</li>
-                            <li>C++</li>
-                            <li>Python</li>
-                        </ul>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="p-2">
+                                <img src="asset/PLC.png" alt="PLC" class="skill-image rounded-circle mb-2" style="width: 100px; height: 100px;">
+                                <p>PLC</p>
+                            </div>
+                            <div class="p-2">
+                                <img src="asset/arduino.png" alt="Arduino" class="skill-image rounded-circle mb-2" style="width: 100px; height: 100px;">
+                                <p>Arduino</p>
+                            </div>
+                            <div class="p-2">
+                                <img src="asset/C++.png" alt="C++" class="skill-image rounded-circle mb-2" style="width: 100px; height: 100px;">
+                                <p>C++</p>
+                            </div>
+                            <div class="p-2">
+                                <img src="asset/python.svg" alt="Python" class="skill-image rounded-circle mb-2" style="width: 100px; height: 100px;">
+                                <p>Python</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener('scroll', function() {
-            const imageContainer = document.getElementById('profileImageContainer');
-            if (window.scrollY > 50) { // Adjust based on when you want the image to move
-                imageContainer.classList.add('fixed-top-left');
-            } else {
-                imageContainer.classList.remove('fixed-top-left');
-            }
-        });
-    </script>
+    <footer class="footer mt-auto py-3 bg-primary text-white text-center">
+        <div class="container">
+            <span>Raya Satriatama</span>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

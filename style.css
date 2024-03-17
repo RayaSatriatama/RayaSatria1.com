@@ -103,3 +103,75 @@ body, html {
     left: 20px; /* Adjust as needed */
     transform: translate(0, 0);
 }
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.skill-image {
+    width: 100px; /* Adjust based on your preference */
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.custom-navbar {
+    background-color: #007bff; /* Example of a custom blue color */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-nav .nav-link {
+    color: white !important; /* Ensures text is white */
+}
+
+.img-fluid.mb-3.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the area, useful for non-square images */
+}
+
+body, html {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #0056b3; /* Darker blue for text */
+}
+
+/* Style for the form background if needed */
+.form-background {
+    background-color: white; /* White background for the form area */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds subtle shadow */
+}
+
+/* Styles for form inputs and buttons */
+.form-control {
+    border: 1px solid #007bff; /* Blue border for inputs */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary blue */
+    border: none;
+}
+
+/* Customizes the look of labels for better readability */
+label {
+    margin-bottom: 0.5rem;
+    color: #0056b3; /* Darker blue for text */
+}
+
+
